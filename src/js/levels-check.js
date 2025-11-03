@@ -18,11 +18,13 @@ async function checkFlag(level, flag) {
   if (!normalized) return { ok: false, reason: "Please enter a flag." };
 
   const hash = await sha256Hex(normalized);
-  if (hash.toLowerCase() === expected.toLowerCase()) {
-    localStorage.setItem(`level${level}_unlocked`, "true");
 
+  if (hash.toLowerCase() === expected.toLowerCase()) {
+    const nextLevel = parseInt(level) + 1;
+    localStorage.setItem(`level${nextLevel}_unlocked`, "true");
     return { ok: true, reason: "Correct flag" };
   }
+
   return { ok: false, reason: "Incorrect flag" };
 }
 
@@ -43,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (result.ok && autoRedirectOnSuccess) {
         const nextLevel = parseInt(level) + 1;
         setTimeout(() => {
-        window.location.href = levelPath(nextLevel);
+          window.location.href = levelPath(nextLevel);
         }, 1900);
       }
     });
