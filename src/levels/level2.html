@@ -9,27 +9,74 @@
 
     <div id="navbar"></div>
 
-    <main class="grow flex flex-col items-center justify-center text-center px-6 py-10" data-level="2">
-      <h2 class="text-2xl font-semibold mb-12">Level 2: The Beginning</h2>
-      <p class="max-w-2xl text-gray-300 mb-12">
-        In 2012, a mysterious black-and-white image appeared on the website 4chan.  
-        It contained a message inviting users to take part in a challenge.  
-        The image was later linked to what became known as Cicada 3301 — an online puzzle that captured worldwide attention.  
-        This level pays tribute to that beginning. The image below hides your next flag.
-      </p>
+    <main class="grow flex flex-col items-center justify-center px-6 py-8" data-level="2">
+      
+      <div class="mb-8 text-center space-y-4">
+        <div class="inline-block px-6 py-2 bg-indigo-400/20 border border-indigo-400/50 rounded-full">
+          <span class="text-indigo-300 text-base font-semibold tracking-wide">LEVEL 2</span>
+        </div>
+        <h2 class="text-4xl font-bold text-gray-100">The Beginning</h2>
+        <p class="max-w-xl mx-auto text-gray-400 text-base leading-relaxed">
+          In 2012, a mysterious black-and-white image appeared on 4chan containing a message inviting users to take part in a challenge. 
+          The image was later linked to <span class="text-indigo-400">Cicada 3301</span>. This level pays tribute to that beginning.
+          <br><br><span class="text-2xl text-gray-200">The image below hides your next flag!</span>
+        </p>
+      </div>
 
         <img 
           src="/src/images/First_Puzzle.jpg" 
           alt="Cicada 3301 Puzzle Image"
-          class="rounded-lg shadow-lg max-w-full w-[300px] sm:w-[400px] md:w-[500px]"
+          class="rounded-lg shadow-2xl w-[320px] sm:w-[420px] md:w-[500px]"
         />
 
+      <div class="w-full max-w-md mt-8 mb-8">
+        <form data-level-form="1" class="space-y-3">
+          <input
+            data-flag-input
+            type="text" 
+            placeholder="FLAG{...}" 
+            class="w-full px-4 py-2 rounded-md mb-4 bg-slate-800 text-gray-100 placeholder-gray-500 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+          />
+          
+          <button type="button"
+            data-flag-submit
+            class="w-full bg-indigo-600 px-4 py-2 rounded-md font-medium hover:bg-indigo-700 transition-colors"
+          >
+            Submit Flag
+          </button>
+
+          <p data-flag-feedback class="feedback text-sm text-center"></p>
+        </form>
+      </div>
+
+      <div class="w-full max-w-md space-y-3">
+        <div class="space-y-2">
+          <button class="hint-btn w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-750 hover:border-gray-600 transition-colors text-left flex items-center justify-between" data-hint="1">
+            <span class="text-gray-300 text-sm">Hint 1</span>
+            <span class="text-gray-500 text-xs">▼</span>
+          </button>
+          <p class="hint-text text-gray-400 hidden mt-2" data-hint="1">
+            Maybe you should check the page source...
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <button class="hint-btn w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-750 hover:border-gray-600 transition-colors text-left flex items-center justify-between" data-hint="2">
+            <span class="text-gray-300 text-sm">Hint 2</span>
+            <span class="text-gray-500 text-xs">▼</span>
+          </button>
+          <p class="hint-text text-gray-400 hidden mt-2" data-hint="2">
+            Look inside HTML file for clues...
+          </p>
+        </div>      </div>
     </main>
 
     <div id="footer"></div>
 
     <script src="/src/js/partials.js"></script>
+    <script src="/src/js/levels-check.js"></script>
     <script src="/src/js/level-protection.js" defer></script>
+    <script src ="/src/js/toggle-hints.js"></script>
 
 </body>
 </html>

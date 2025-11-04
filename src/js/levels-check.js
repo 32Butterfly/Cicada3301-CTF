@@ -1,5 +1,6 @@
 const levelHashes = {
   1: "f9e1fe7953d18dfe541ad14fb1f7a59154d39da230f826adbbccc5019967b38d",
+  2: "1b18968cb73c009858eb36d5ac691796df816ed66247bf5ee5d853f7223e12c6",
 };
 
 const autoRedirectOnSuccess = true;
