@@ -3,12 +3,24 @@ fetch('/src/partials/navbar.html')
   .then(html => {
     document.getElementById('navbar').innerHTML = html;
 
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileLevelsMenu = document.getElementById('mobileLevelsMenu');
+
+    mobileBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
     const levelsMenu = document.getElementById('levelsMenu');
     const levelsBtn = document.getElementById('levelsBtn');
     const levelItems = document.querySelectorAll('.level-item');
 
     levelsBtn.addEventListener('click', () => {
         levelsMenu.classList.toggle('hidden');
+    });
+
+    mobileLevelsBtn.addEventListener('click', () => {
+      mobileLevelsMenu.classList.toggle('hidden');
     });
 
     window.addEventListener('click', (e) => {
