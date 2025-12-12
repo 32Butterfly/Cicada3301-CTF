@@ -3,6 +3,7 @@ const levelHashes = {
   2: "1b18968cb73c009858eb36d5ac691796df816ed66247bf5ee5d853f7223e12c6",
   3: "4dd6222ef47ba4a23d5ded9cf027a3a14e9e3b90c48c6ce6f3ee7885d01f80ea",
   4: "e36eaa2bdb372adce4bd3a8cd6b165daafbb4af19d85c805675ef245110b873b",
+  5: "022daedba6a4a15d6c02bf200b5313f22af0f1fd8a87ebb8c7f83e4d3ab52b00",
 };
 
 const autoRedirectOnSuccess = true;
