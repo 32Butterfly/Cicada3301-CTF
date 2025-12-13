@@ -4,6 +4,10 @@ const levelHashes = {
   3: "4dd6222ef47ba4a23d5ded9cf027a3a14e9e3b90c48c6ce6f3ee7885d01f80ea",
   4: "e36eaa2bdb372adce4bd3a8cd6b165daafbb4af19d85c805675ef245110b873b",
   5: "022daedba6a4a15d6c02bf200b5313f22af0f1fd8a87ebb8c7f83e4d3ab52b00",
+  6: "1aa72f5ff9e4589d3799bcf08370fa1e69855dff7b12218244648b18eac9d705",
+  7: "5e5a2ede2192f67ac4c193d320cf801c8b4ca2ce660e8f526aecb9b795b83b91",
+  8: "2cbe9d40a652439c3ab136d281eea5603438a679d44d94ca7e09f78bd11ca3e1",
+  9: "d04c1d7b17593a4f88715aec2ce2e83a8ab6d582529ddc23d8ba3e83b711ae6f",
 };
 
 const autoRedirectOnSuccess = true;
