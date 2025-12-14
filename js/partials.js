@@ -1,4 +1,8 @@
-fetch('../partials/navbar.html')
+const basePath = window.location.pathname.includes('/levels/')
+  ? '../partials/'
+  : './partials/';
+
+fetch(basePath + 'navbar.html')
   .then(res => res.text())
   .then(html => {
     document.getElementById('navbar').innerHTML = html;
@@ -42,7 +46,7 @@ fetch('../partials/navbar.html')
     });
   });
 
-fetch('../partials/footer.html')
+fetch( basePath +'footer.html')
   .then(res => res.text())
   .then(html => {
     document.getElementById('footer').innerHTML = html;
