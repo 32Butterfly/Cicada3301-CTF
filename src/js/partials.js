@@ -1,6 +1,4 @@
-const basePath = window.location.pathname.includes('/levels/')
-  ? '../partials/'
-  : './partials/';
+const basePath = '/Cicada3301-CTF/partials/';
 
 fetch(basePath + 'navbar.html')
   .then(res => res.text())
