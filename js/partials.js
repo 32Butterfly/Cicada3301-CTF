@@ -1,4 +1,4 @@
-fetch('/src/partials/navbar.html')
+fetch('../partials/navbar.html')
   .then(res => res.text())
   .then(html => {
     document.getElementById('navbar').innerHTML = html;
@@ -42,7 +42,7 @@ fetch('/src/partials/navbar.html')
     });
   });
 
-fetch('/src/partials/footer.html')
+fetch('../partials/footer.html')
   .then(res => res.text())
   .then(html => {
     document.getElementById('footer').innerHTML = html;
