@@ -1,0 +1,77 @@
+<nav class="w-full bg-slate-900/95 backdrop-blur-md shadow-lg border-b border-slate-700">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between select-none">
+    
+    <a href="/src/index.html" class="text-2xl font-semibold text-white tracking-wide hover:text-indigo-400 transition">
+      Cicada 3301 CTF
+    </a>
+
+    <!-- Computer Menu -->
+    <ul class="hidden md:flex space-x-8 text-gray-200 font-medium">
+      <li>
+        <a href="/src/index.html" class="hover:text-indigo-400 transition">Home</a>
+      </li>
+      <li class="relative group">
+        <button id="levelsBtn" class="hover:text-indigo-400 transition flex items-center gap-1">
+          Levels <span class="text-xs">▾</span>
+        </button>
+        <ul id="levelsMenu"
+            class="absolute hidden bg-slate-800 text-sm rounded-md shadow-xl min-w-[200px] top-full mt-2 border border-slate-700">
+          <li><a href="/src/levels/level1.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="1">Level 1</a></li>
+          <li><a href="/src/levels/level2.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="2">Level 2</a></li>
+          <li><a href="/src/levels/level3.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="3">Level 3</a></li>
+          <li><a href="/src/levels/level4.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="4">Level 4</a></li>
+          <li><a href="/src/levels/level5.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="5">Level 5</a></li>
+          <li><a href="/src/levels/level6.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="6">Level 6</a></li>
+          <li><a href="/src/levels/level7.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="7">Level 7</a></li>
+          <li><a href="/src/levels/level8.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="8">Level 8</a></li>
+          <li><a href="/src/levels/level9.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="9">Level 9</a></li>
+          <li><a href="/src/levels/level10.html" class="level-item block px-5 py-2 hover:bg-slate-700" data-level="10">Level 10</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="hover:text-indigo-400 transition">About</a>
+      </li>
+    </ul>
+
+    <!-- Mobile Menu -->
+    <button class="md:hidden text-gray-200 hover:text-indigo-400 transition" id="mobileMenuBtn">
+      ☰
+    </button>
+  </div>
+
+<div id="mobileMenu" class="hidden md:hidden bg-slate-800/95 backdrop-blur-sm border-t border-slate-700 shadow-lg">
+  <ul class="flex flex-col w-full px-4 py-3 text-gray-200 select-none">
+    <li class="border-b border-slate-700/50">
+      <a href="/src/index.html" class="block py-3 px-4 hover:bg-slate-700/50 rounded-lg transition-colors hover:text-indigo-400 font-medium">
+        Home
+      </a>
+    </li>
+    
+    <li class="border-b border-slate-700/50">
+      <button id="mobileLevelsBtn" class="w-full py-3 px-4 hover:bg-slate-700/50 rounded-lg transition-colors hover:text-indigo-400 font-medium text-left flex justify-between items-center">
+        <span> Levels</span>
+        <span class="inline-block transform transition-transform text-xs">▼</span>
+      </button>
+      
+        <ul id="mobileLevelsMenu" class="hidden bg-slate-900 rounded-md mt-2 text-sm border border-slate-700">
+            <li><a href="/src/levels/level1.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="1">Level 1</a></li>
+            <li><a href="/src/levels/level2.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="2">Level 2</a></li>
+            <li><a href="/src/levels/level3.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="3">Level 3</a></li>
+            <li><a href="/src/levels/level4.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="4">Level 4</a></li>
+            <li><a href="/src/levels/level5.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="5">Level 5</a></li>
+            <li><a href="/src/levels/level6.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="6">Level 6</a></li>
+            <li><a href="/src/levels/level7.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="7">Level 7</a></li>
+            <li><a href="/src/levels/level8.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="8">Level 8</a></li>
+            <li><a href="/src/levels/level9.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="9">Level 9</a></li>
+            <li><a href="/src/levels/level10.html" class="level-item block px-5 py-2 hover:bg-slate-700 transition-colors" data-level="10">Level 10</a></li>
+        </ul>
+    </li>
+    
+    <li>
+      <a href="#" class="block py-3 px-4 hover:bg-slate-700/50 rounded-lg transition-colors hover:text-indigo-400 font-medium">
+        About
+      </a>
+    </li>
+  </ul>
+</div>
+</nav>

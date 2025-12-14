@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+</head>
+<body class=" bg-gray-900 text-white min-h-screen flex flex-col">
+
+    <div id="navbar"></div>
+
+    <main class="grow flex flex-col items-center justify-center text-center px-6 py-10" data-level="1">
+      <div class="mb-8 text-center space-y-4">
+        <div class="inline-block px-6 py-2 bg-indigo-400/20 border border-indigo-400/50 rounded-full">
+            <span class="text-indigo-300 text-base font-semibold tracking-wide">LEVEL 1</span>
+        </div>
+        <h2 class="text-4xl font-bold text-gray-100">The Warmup</h2>
+        <p class="max-w-xl mx-auto text-gray-400 text-base leading-relaxed">
+            Welcome to your first challenge. Hidden somewhere in this page lies your first key — 
+            a piece of text that reveals itself only to those who observe carefully. 
+            Use your wits to uncover it and submit it in the form below.
+        </p>
+      </div>
+
+        <div class="w-full max-w-sm">
+          <form data-level-form="1">
+          <input
+            data-flag-input
+            type="text" 
+            placeholder="Enter FLAG{...}" 
+            class="w-full px-4 py-2 rounded-md mb-4 bg-slate-800 text-gray-100 placeholder-gray-500 border border-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition"
+          >
+          
+          <button type="button"
+            data-flag-submit
+            class="w-full bg-indigo-600 px-4 py-2 rounded-md font-medium hover:bg-indigo-700 transition-colors"
+          >
+            Submit
+          </button>
+
+          <p data-flag-feedback class="feedback mt-3 text-sm text-center"></p>
+          </form>
+        </div>
+
+      <div class="mt-8 flex flex-col items-center gap-4 w-full max-w-xs">
+        <div class="w-full text-center">
+          <button class="hint-btn w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-750 hover:border-gray-600 transition-colors text-left flex items-center justify-between" data-hint="1">
+            <span class="text-gray-300 text-sm">Hint 1</span>
+            <span class="text-gray-500 text-xs">▼</span>
+          </button>
+          <p class="hint-text text-gray-400 hidden mt-2" data-hint="1">
+            Maybe you should check the page source...
+          </p>
+        </div>
+
+        <!-- FLAG{first_step} -->
+        <div class="w-full text-center">
+          <button class="hint-btn w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg hover:bg-gray-750 hover:border-gray-600 transition-colors text-left flex items-center justify-between" data-hint="2">
+            <span class="text-gray-300 text-sm">Hint 2</span>
+            <span class="text-gray-500 text-xs">▼</span>
+          </button>
+          <p class="hint-text text-gray-400 hidden mt-2" data-hint="2">
+            Look inside HTML file for clues...
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="/src/js/partials.js"></script>
+    <script src="/src/js/levels-check.js"></script>
+    <script src="/src/js/level-protection.js" defer></script>
+    <script src ="/src/js/toggle-hints.js"></script>
+
+</body>
+</html>
