@@ -12,7 +12,7 @@ const levelHashes = {
 };
 
 const autoRedirectOnSuccess = true;
-const levelPath = n => `/src/levels/level${n}.html`;
+const levelPath = n => `/levels/level${n}.html`;
 
 async function sha256Hex(message) {
   const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(message));
