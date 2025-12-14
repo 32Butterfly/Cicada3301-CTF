@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify",
-      "deploy": "npm run build && gh-pages -d src"
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify",
+    "deploy": "npm run build && gh-pages -d src"
   },
   "repository": {
     "type": "git",
