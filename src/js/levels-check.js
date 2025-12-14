@@ -8,6 +8,7 @@ const levelHashes = {
   7: "5e5a2ede2192f67ac4c193d320cf801c8b4ca2ce660e8f526aecb9b795b83b91",
   8: "2cbe9d40a652439c3ab136d281eea5603438a679d44d94ca7e09f78bd11ca3e1",
   9: "d04c1d7b17593a4f88715aec2ce2e83a8ab6d582529ddc23d8ba3e83b711ae6f",
+  10: "43384844a1fba89229cbf5bdc11705b34404eb347917b0533640a0ced10d4a86",
 };
 
 const autoRedirectOnSuccess = true;
@@ -52,9 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (result.ok && autoRedirectOnSuccess) {
         const nextLevel = parseInt(level) + 1;
-        setTimeout(() => {
-          window.location.href = levelPath(nextLevel);
-        }, 1900);
+        if (level !== "10") {
+          setTimeout(() => {
+            window.location.href = levelPath(nextLevel);
+          }, 1900);
+        }
       }
     });
   });
