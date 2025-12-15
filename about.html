@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/Cicada3301-CTF/">
+  <link href="output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+
+    <div id="navbar"></div>
+
+    <div class="grow flex justify-center items-start pt-12">
+        <img 
+          src="images/Cicada3301.png" 
+          alt="Cicada 3301" 
+          class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg object-contain opacity-90"
+        />
+    </div>
+
+    <div class="px-4 sm:px-6 md:px-8 lg:px-16 max-w-7xl mx-auto py-12 space-y-16 select-none">
+        <h1 class="text-4xl md:text-5xl text-center text-gray-100 font-bold">
+            About This Project
+        </h1>
+        
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 text-gray-300">
+            <div class="text-left leading-relaxed space-y-4">
+                <p class="text-lg md:text-xl">
+                    Welcome! This is a web-based <span class="text-indigo-400 font-medium">Capture The Flag (CTF)</span> challenge inspired by the mysterious and legendary 
+                    <span class="text-indigo-400 font-medium">Cicada 3301</span> puzzles. These puzzles appeared online in 2012 and captured the imagination of cryptography enthusiasts, hackers, and curious minds around the world.
+                </p>
+                <p class="text-lg md:text-xl">
+                    The original Cicada challenges combined <strong>cryptography, steganography, logic, and coding</strong>. Participants had to analyze images, decode hidden messages, and even explore obscure corners of the internet to find answers.
+                </p>
+            </div>
+
+            <div class="text-left leading-relaxed space-y-4">
+                <p class="text-lg md:text-xl">
+                    This CTF brings that same spirit here in your browser. You’ll progress through <strong>10 levels</strong>, each introducing different techniques like Caesar ciphers, XOR encoding, Base64 decoding, and some sneaky client-side logic.
+                </p>
+                <p class="text-lg md:text-xl">
+                    The focus is not just solving puzzles, but learning <em>how data can be hidden, transformed, and revealed</em>. It’s a playful way to train your mind in problem-solving and cryptography basics.
+                </p>
+            </div>
+        </div>
+
+        <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-8 space-y-6">
+            <h2 class="text-2xl font-semibold text-gray-100 text-center">
+                Where to Learn More About Cicada 3301
+            </h2>
+
+            <ul class="grid md:grid-cols-1 gap-4 text-gray-300 text-lg">
+                <li>• Watch the <a href="https://www.youtube.com/watch?v=I2O7blSSzpI&t=1s" target="_blank" class="text-indigo-400 hover:underline">Lemminoo Cicada 3301 video</a> for a fun walkthrough of the puzzles.</li>
+                <li>• Read about the history on <a href="https://en.wikipedia.org/wiki/Cicada_3301" target="_blank" class="text-indigo-400 hover:underline">Wikipedia</a>.</li>
+            </ul>
+        </div>
+
+        <div class="text-center space-y-8">
+            <p class="text-2xl md:text-3xl text-gray-100 font-medium">
+                Ready to see if you have what it takes?
+            </p>
+            <div>
+                <a href="levels/level1.html">
+                    <button class="px-10 py-4 bg-indigo-600 text-white rounded-lg text-xl font-semibold hover:bg-indigo-700 hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-lg cursor-pointer">
+                        Start the Challenge
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div> 
+
+    <script src="js/partials.js"></script>
+
+    <noscript>
+        <div class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50 text-white text-lg p-5">
+            You need to enable JavaScript for this website to work properly.
+        </div>
+    </noscript>
+
+</body>
+</html>
