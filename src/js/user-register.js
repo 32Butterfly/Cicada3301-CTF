@@ -57,6 +57,7 @@ const observer = new MutationObserver((mutations) => {
         setTimeout(() => {
         flagSection.classList.add('hidden');
         victorySection.classList.remove('hidden');
+        location.reload();
         }, 1500);
     }
     });
