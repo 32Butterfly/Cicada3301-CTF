@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <p class="text-gray-400 mb-8 text-lg">
           Complete the previous levels first to unlock this challenge.
         </p>
-        <a href="/src/index.html"
+        <a href="/Cicada3301-CTF/index.html"
            class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors">
           Go Back to Home
         </a>
